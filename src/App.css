@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{background-color: rgb(220,220,220);}
+
+.center{
+  display: flex;
+  margin: 0 auto;
+  padding: 0 2%;
+  max-width: 1100px;
+}
+
+.header{
+  background-color: white;
+  border-bottom: 2px solid rgb(230,230,230);
+  padding: 10px 0;
+}
+
+.header__logo{width: 50%;}
+
+.header__loginForm{
+  width: 50%;
+  text-align: right;
+}
+
+.header__loginForm input[type=text],
+.header__loginForm input[type=password]{
+  width: 150px;
+  height: 25px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.header__loginForm input[type=submit]{
+  width: 60px;
+  height: 25px;
+  background-color: #0095f6;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form{display: inline-block;}
+
+.btn__criarConta{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.btn__criarConta a{
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header__logadoInfo{
+  width: 50%;
+  text-align: right;
+}
+
+.header__logadoInfo a{
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 0 5px;
+  background-color: #0095f6;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+/*Modal Criar conta*/
+
+.modalCriarConta{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.formCriarConta{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  padding: 25px;
+  width: 80%;
+  max-width: 700px;
+}
+
+.formCriarConta input{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 2px solid #ccc;
+}
+
+.formCriarConta input[type=submit]{
+  background-color: #0095f6;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+
+.Close-modal-criar{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: #0095f6;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/*Modal de Upload*/
+
+.modalUpload{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.formUpload{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  padding: 25px;
+  width: 80%;
+  max-width: 700px;
+}
+
+.formUpload progress{
+  width: 250px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.formUpload input{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 2px solid #ccc;
+}
+
+.formUpload input[type=submit]{
+  background-color: #0095f6;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+
+.Close-modal-upload{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: #0095f6;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/*******/
+
+/***FEED DE POSTS***/
+
+.postSingle{
+  max-width: 700px;
+  background-color: white;
+  margin: 10px auto;
+}
+
+.postSingle img{
+  width: 100%;
+}
+
+.postSingle p{
+  padding: 10px;
+}
+
+.postSingle form{
+  padding: 20px;
+  width: 100%;
+}
+
+.postSingle textarea{
+  width: 100%;
+  height: 120px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.postSingle input[type=submit]{
+  padding: 5px 10px;
+  background-color: #0095f6;
+  color: white;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.coments{
+  padding-left: 20px;
+}
+
+.coments > h2{
+  font-size: 23px;
+  color: #4b4b4b;
+  border-bottom: 1px solid #4b4b4b;
+  width: 650px;
+  padding-bottom: 20px;
+}
+
+.coment-single{
+  padding-top: 10px;
+}
